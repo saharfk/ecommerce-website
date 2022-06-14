@@ -13,3 +13,7 @@ def template(request):
 
 def sample(request):
     return render(request, 'templateSample.html')
+
+
+def info(request):
+    return render(request, 'productInfo.html')

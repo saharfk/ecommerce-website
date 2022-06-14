@@ -1,0 +1,62 @@
+{% load static %}
+{% block head %} {% include 'header.html' %} {% endblock %}
+
+
+<!-- pricing -->
+<section id="pricing">
+    <h5 class="white fs-l3 fw-900 my-5 justify-center items-center text-center">Product NAME</h5>
+
+    <div class="p-10 flex flex-wrap">
+        <div class="w-100pc md-w-50pc">
+            <div id="slider-1">
+                <div class="p-10 md-p-l17 flex justify-center items-center flex-column text-center">
+                    <img class="w-100pc" src="{% static '' %}img/yoann-siloine-dyaxQ-aoGWY-unsplash.jpg" alt="">
+
+                </div>
+                <div class="p-10 md-p-l17 flex justify-center items-center flex-column text-center">
+                    <img class="w-100pc" src="{% static '' %}img/yoann-siloine-dyaxQ-aoGWY-unsplash.jpg" alt="">
+                </div>
+                <div class="p-10 md-p-l17 flex justify-center items-center flex-column text-center">
+                    <img class="w-100pc" src="{% static '' %}img/yoann-siloine-dyaxQ-aoGWY-unsplash.jpg" alt="">
+                </div>
+            </div>
+            <ul class="list-none w-100pc flex justify-between top-50pc">
+                <li>
+                    <button
+                            class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none">
+                        <i
+                                data-feather="chevron-left"></i></button>
+                </li>
+                <li>
+                    <button
+                            class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none">
+                        <i
+                                data-feather="chevron-right"></i></button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w-100pc md-w-50pc ">
+            <ul class="list-none fs-l1 fw-300 justify-center items-center text-center">
+                <li class="my-3 white opacity-70 no-underline ">Price:
+                    #PRICE
+                </li>
+                <br>
+                <li class="my-3 white opacity-70 no-underline">web address:</li>
+                <li class="my-3 white opacity-70 no-underline">#ADDRESS</li>
+                <br>
+                <li class="my-3 white opacity-70 no-underline">Information:</li>
+
+                <li class="my-3 white opacity-70 no-underline">#INFO</li>
+                <li class="my-3"><a href="#" class="button-md bg-indigo white black no-underline m-10">BUY
+                    NOW</a>
+
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+{% block foot %} {% include 'footer.html' %} {% endblock %}
