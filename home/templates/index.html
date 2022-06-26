@@ -4,24 +4,9 @@
 <!-- hero section -->
 <section id="home" class="min-h-100vh flex justify-start items-center">
     <div class="mx-5 md-mx-l5">
-{#        <div class="inline-block br-round bg-indigo-30 indigo-lightest p-2 fs-s2 mb-5">#}
-{#            <div class="inline-block bg-indigo indigo-lightest br-round px-3 py-1 mr-3 fs-s3">Join Meet Up</div>#}
-{#            We are coming to Singapore. Learn more…#}
-{#        </div>#}
         <div>
             <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 ">CODOGRAMMER<br/>Choose Your Service</h1>
 
-{#            <div class="br-8 mt-10 inline-flex">#}
-{#                <input type="text"#}
-{#                       class="input-lg half bw-0 fw-200 bg-indigo-lightest-10 white ph-indigo-lightest focus-white opacity-80 fs-s3 py-5 min-w-25vw br-r-0"#}
-{#                       placeholder="Email Address">#}
-{#                <button#}
-{#                        class="button-lg bg-indigo-lightest-20 indigo-lightest focus-white fw-300 fs-s3 mr-0 br-l-0">Get#}
-{#                    Started#}
-{#                </button>#}
-{#            </div>#}
-{#            <div class="white opacity-20 fs-s3 mt-3">No credit card required</span>#}
-{#            </div>#}
         </div>
     </div>
 </section>
@@ -32,17 +17,20 @@
     <div id="slider-1">
         <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
             <h2 class="white fs-l3 fw-900">Build your CV/Resume</h2>
-            <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">we can write you CV/resume in english and persian languages in a very professional way </p>
+            <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">we can write you CV/resume in english and persian
+                languages in a very professional way </p>
             <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">More info</a>
         </div>
         <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
             <h2 class="white fs-l3 fw-900">Build your websites with us</h2>
-            <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">you can Build your websites for cheap prices with us </p>
+            <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">you can Build your websites for cheap prices with
+                us </p>
             <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">More info</a>
         </div>
         <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
             <h2 class="white fs-l3 fw-900">Build your python projects</h2>
-            <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">send us your ideas and projects and we will turn it into python code </p>
+            <p class="indigo-lightest fw-600 fs-m1 opacity-30 my-5">send us your ideas and projects and we will turn it
+                into python code </p>
             <a href="#" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline m-5">More info</a>
         </div>
     </div>
@@ -87,60 +75,21 @@
 <!-- testimonials -->
 <section class="p-10 md-p-l5">
     <div id="slider-2">
-        <div class="px-3">
-            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
-                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed do eiusmod tempor </p>
-                <div class="flex items-center my-5">
-                    <div class="ml-4 fs-s1">
-                        <div class="indigo-lightest"><b>Mahnaz Farzin</b></div>
-                        <div class="indigo-lightest opacity-20">Product Manager, XYZ</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="px-3">
-            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
-                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">I got accepted in 2 universities
-                    thanks to her skills in writing my CV </p>
-                <div class="flex items-center my-5">
-                    <div class="ml-4 fs-s1">
-                        <div class="indigo-lightest"><b>Sepide Heidari</b></div>
-                        <div class="indigo-lightest opacity-20">English Resume client</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="px-3">
-            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
-                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">she did my project really fast and I
-                    got an A in my project, I definitely recommend her</p>
-                <div class="flex items-center my-5">
-                    <div class="ml-4 fs-s1">
-                        <div class="indigo-lightest"><b>Bahareh mehdizadeh</b></div>
-                        <div class="indigo-lightest opacity-20">Python project client</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="px-3">
-            <div class="p-8 br-8 bg-indigo-lightest-10 relative">
-                <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
-                <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">she is the best and I would defently
-                    want to work with her again </p>
-                <div class="flex items-center my-5">
+        {% for cm in allComments %}
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">{{ cm.commentInfo }}</p>
+                    <div class="flex items-center my-5">
 
-                    <div class="ml-4 fs-s1">
-                        <div class="indigo-lightest"><b>Parisa Moradi</b></div>
-                        <div class="indigo-lightest opacity-20">Website resume client</div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest"><b>Parisa Moradi</b></div>
+                            <div class="indigo-lightest opacity-20">{{ cm.service }}</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
+        {% endfor %}
     </div>
 </section>
 

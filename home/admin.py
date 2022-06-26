@@ -1,8 +1,9 @@
 from django.contrib import admin
+from .models import Comments
 
-# Register your models here.
-# from django.contrib import admin
-# from .models import Patient, PatientHistory
-#
-# admin.site.register(Patient)
-# admin.site.register(PatientHistory)
+
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['service', 'comment']
+
+
+admin.site.register(Comments)
