@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+
 # import home
 # from home import views
 # from order import views as OrderViews
@@ -23,8 +24,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    # path('home/', include('home.urls')),
     path('product/', include('product.urls')),
+    path('sample/', include('samples.urls')),
     # path('order/', include('order.urls')),
     # path('user/', include('user.urls'), name='user'),
 ]
